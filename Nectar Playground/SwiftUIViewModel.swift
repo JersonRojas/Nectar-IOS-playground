@@ -8,36 +8,6 @@
 import Foundation
 
 let apiURL = "https://833fecbe-3eb1-40ed-a7a4-47f3a7bfe9c6.mock.pstmn.io/transactions"
-struct TransactionsResponse: Codable {
-   
-    let items: [TransactionItem]
-}
-struct TransactionItem: Codable, Identifiable {
-    let id = UUID()
-    let transactionDate: String
-    let processedDate: String
-    let transactionId: String?
-    let headerText: String
-    let descriptionText: String
-    let points: Int
-    let monetaryValue: Double
-    let displayType: String
-    let detailTexts: [String]
- 
-
-    enum CodingKeys: String, CodingKey {
-        case transactionDate
-        case processedDate
-        case transactionId
-        case headerText
-        case descriptionText
-        case points
-        case monetaryValue
-        case displayType
-        case detailTexts
-      
-    }
-}
 
 class SwiftUIViewModel: ObservableObject {
     @Published var transactions: [TransactionItem]? = nil

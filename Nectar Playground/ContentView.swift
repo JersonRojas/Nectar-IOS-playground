@@ -28,7 +28,7 @@ struct ContentView: View {
                             Text("Swift UI")
                             Divider()
                         }
-                    UIKitView()
+                    UIKitConfigurator()
                         .tabItem {
                             Text("UIKit")
                                 .font(.headline)
