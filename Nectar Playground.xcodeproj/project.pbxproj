@@ -1,0 +1,650 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7720ECC62C8729BD00320402 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7720ECC52C8729BD00320402 /* SwiftUIView.swift */; };
+		7720ECC82C8729F100320402 /* UIKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7720ECC72C8729F100320402 /* UIKitView.swift */; };
+		7720ECCA2C872A1E00320402 /* TransactionDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7720ECC92C872A1E00320402 /* TransactionDetailsView.swift */; };
+		7720ECCC2C872AB500320402 /* SwiftUIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7720ECCB2C872AB500320402 /* SwiftUIViewModel.swift */; };
+		7720ECCF2C87541600320402 /* UICustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7720ECCE2C87541500320402 /* UICustomColors.swift */; };
+		7766BE752C87194F003F3F9C /* Nectar_PlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7766BE742C87194F003F3F9C /* Nectar_PlaygroundApp.swift */; };
+		7766BE772C87194F003F3F9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7766BE762C87194F003F3F9C /* ContentView.swift */; };
+		7766BE792C871951003F3F9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7766BE782C871951003F3F9C /* Assets.xcassets */; };
+		7766BE7D2C871951003F3F9C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7766BE7C2C871951003F3F9C /* Preview Assets.xcassets */; };
+		7766BE872C871951003F3F9C /* Nectar_PlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7766BE862C871951003F3F9C /* Nectar_PlaygroundTests.swift */; };
+		7766BE912C871951003F3F9C /* Nectar_PlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7766BE902C871951003F3F9C /* Nectar_PlaygroundUITests.swift */; };
+		7766BE932C871951003F3F9C /* Nectar_PlaygroundUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7766BE922C871951003F3F9C /* Nectar_PlaygroundUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7766BE832C871951003F3F9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7766BE692C87194F003F3F9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7766BE702C87194F003F3F9C;
+			remoteInfo = "Nectar Playground";
+		};
+		7766BE8D2C871951003F3F9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7766BE692C87194F003F3F9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7766BE702C87194F003F3F9C;
+			remoteInfo = "Nectar Playground";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7720ECC52C8729BD00320402 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		7720ECC72C8729F100320402 /* UIKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitView.swift; sourceTree = "<group>"; };
+		7720ECC92C872A1E00320402 /* TransactionDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsView.swift; sourceTree = "<group>"; };
+		7720ECCB2C872AB500320402 /* SwiftUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewModel.swift; sourceTree = "<group>"; };
+		7720ECCE2C87541500320402 /* UICustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICustomColors.swift; sourceTree = "<group>"; };
+		7766BE712C87194F003F3F9C /* Nectar Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nectar Playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7766BE742C87194F003F3F9C /* Nectar_PlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nectar_PlaygroundApp.swift; sourceTree = "<group>"; };
+		7766BE762C87194F003F3F9C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7766BE782C871951003F3F9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7766BE7A2C871951003F3F9C /* Nectar_Playground.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Nectar_Playground.entitlements; sourceTree = "<group>"; };
+		7766BE7C2C871951003F3F9C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7766BE822C871951003F3F9C /* Nectar PlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nectar PlaygroundTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7766BE862C871951003F3F9C /* Nectar_PlaygroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nectar_PlaygroundTests.swift; sourceTree = "<group>"; };
+		7766BE8C2C871951003F3F9C /* Nectar PlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nectar PlaygroundUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7766BE902C871951003F3F9C /* Nectar_PlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nectar_PlaygroundUITests.swift; sourceTree = "<group>"; };
+		7766BE922C871951003F3F9C /* Nectar_PlaygroundUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nectar_PlaygroundUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7766BE6E2C87194F003F3F9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7766BE7F2C871951003F3F9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7766BE892C871951003F3F9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7720ECCD2C8753DA00320402 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7720ECCE2C87541500320402 /* UICustomColors.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7766BE682C87194F003F3F9C = {
+			isa = PBXGroup;
+			children = (
+				7766BE732C87194F003F3F9C /* Nectar Playground */,
+				7766BE852C871951003F3F9C /* Nectar PlaygroundTests */,
+				7766BE8F2C871951003F3F9C /* Nectar PlaygroundUITests */,
+				7766BE722C87194F003F3F9C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7766BE722C87194F003F3F9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7766BE712C87194F003F3F9C /* Nectar Playground.app */,
+				7766BE822C871951003F3F9C /* Nectar PlaygroundTests.xctest */,
+				7766BE8C2C871951003F3F9C /* Nectar PlaygroundUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7766BE732C87194F003F3F9C /* Nectar Playground */ = {
+			isa = PBXGroup;
+			children = (
+				7720ECCD2C8753DA00320402 /* Extensions */,
+				7766BE742C87194F003F3F9C /* Nectar_PlaygroundApp.swift */,
+				7766BE762C87194F003F3F9C /* ContentView.swift */,
+				7766BE782C871951003F3F9C /* Assets.xcassets */,
+				7766BE7A2C871951003F3F9C /* Nectar_Playground.entitlements */,
+				7766BE7B2C871951003F3F9C /* Preview Content */,
+				7720ECC52C8729BD00320402 /* SwiftUIView.swift */,
+				7720ECC72C8729F100320402 /* UIKitView.swift */,
+				7720ECC92C872A1E00320402 /* TransactionDetailsView.swift */,
+				7720ECCB2C872AB500320402 /* SwiftUIViewModel.swift */,
+			);
+			path = "Nectar Playground";
+			sourceTree = "<group>";
+		};
+		7766BE7B2C871951003F3F9C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7766BE7C2C871951003F3F9C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7766BE852C871951003F3F9C /* Nectar PlaygroundTests */ = {
+			isa = PBXGroup;
+			children = (
+				7766BE862C871951003F3F9C /* Nectar_PlaygroundTests.swift */,
+			);
+			path = "Nectar PlaygroundTests";
+			sourceTree = "<group>";
+		};
+		7766BE8F2C871951003F3F9C /* Nectar PlaygroundUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7766BE902C871951003F3F9C /* Nectar_PlaygroundUITests.swift */,
+				7766BE922C871951003F3F9C /* Nectar_PlaygroundUITestsLaunchTests.swift */,
+			);
+			path = "Nectar PlaygroundUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7766BE702C87194F003F3F9C /* Nectar Playground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7766BE962C871951003F3F9C /* Build configuration list for PBXNativeTarget "Nectar Playground" */;
+			buildPhases = (
+				7766BE6D2C87194F003F3F9C /* Sources */,
+				7766BE6E2C87194F003F3F9C /* Frameworks */,
+				7766BE6F2C87194F003F3F9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Nectar Playground";
+			productName = "Nectar Playground";
+			productReference = 7766BE712C87194F003F3F9C /* Nectar Playground.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7766BE812C871951003F3F9C /* Nectar PlaygroundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7766BE992C871951003F3F9C /* Build configuration list for PBXNativeTarget "Nectar PlaygroundTests" */;
+			buildPhases = (
+				7766BE7E2C871951003F3F9C /* Sources */,
+				7766BE7F2C871951003F3F9C /* Frameworks */,
+				7766BE802C871951003F3F9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7766BE842C871951003F3F9C /* PBXTargetDependency */,
+			);
+			name = "Nectar PlaygroundTests";
+			productName = "Nectar PlaygroundTests";
+			productReference = 7766BE822C871951003F3F9C /* Nectar PlaygroundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7766BE8B2C871951003F3F9C /* Nectar PlaygroundUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7766BE9C2C871951003F3F9C /* Build configuration list for PBXNativeTarget "Nectar PlaygroundUITests" */;
+			buildPhases = (
+				7766BE882C871951003F3F9C /* Sources */,
+				7766BE892C871951003F3F9C /* Frameworks */,
+				7766BE8A2C871951003F3F9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7766BE8E2C871951003F3F9C /* PBXTargetDependency */,
+			);
+			name = "Nectar PlaygroundUITests";
+			productName = "Nectar PlaygroundUITests";
+			productReference = 7766BE8C2C871951003F3F9C /* Nectar PlaygroundUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7766BE692C87194F003F3F9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					7766BE702C87194F003F3F9C = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					7766BE812C871951003F3F9C = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 7766BE702C87194F003F3F9C;
+					};
+					7766BE8B2C871951003F3F9C = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 7766BE702C87194F003F3F9C;
+					};
+				};
+			};
+			buildConfigurationList = 7766BE6C2C87194F003F3F9C /* Build configuration list for PBXProject "Nectar Playground" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7766BE682C87194F003F3F9C;
+			productRefGroup = 7766BE722C87194F003F3F9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7766BE702C87194F003F3F9C /* Nectar Playground */,
+				7766BE812C871951003F3F9C /* Nectar PlaygroundTests */,
+				7766BE8B2C871951003F3F9C /* Nectar PlaygroundUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7766BE6F2C87194F003F3F9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7766BE7D2C871951003F3F9C /* Preview Assets.xcassets in Resources */,
+				7766BE792C871951003F3F9C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7766BE802C871951003F3F9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7766BE8A2C871951003F3F9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7766BE6D2C87194F003F3F9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7766BE772C87194F003F3F9C /* ContentView.swift in Sources */,
+				7766BE752C87194F003F3F9C /* Nectar_PlaygroundApp.swift in Sources */,
+				7720ECC62C8729BD00320402 /* SwiftUIView.swift in Sources */,
+				7720ECCA2C872A1E00320402 /* TransactionDetailsView.swift in Sources */,
+				7720ECCF2C87541600320402 /* UICustomColors.swift in Sources */,
+				7720ECC82C8729F100320402 /* UIKitView.swift in Sources */,
+				7720ECCC2C872AB500320402 /* SwiftUIViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7766BE7E2C871951003F3F9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7766BE872C871951003F3F9C /* Nectar_PlaygroundTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7766BE882C871951003F3F9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7766BE932C871951003F3F9C /* Nectar_PlaygroundUITestsLaunchTests.swift in Sources */,
+				7766BE912C871951003F3F9C /* Nectar_PlaygroundUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7766BE842C871951003F3F9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7766BE702C87194F003F3F9C /* Nectar Playground */;
+			targetProxy = 7766BE832C871951003F3F9C /* PBXContainerItemProxy */;
+		};
+		7766BE8E2C871951003F3F9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7766BE702C87194F003F3F9C /* Nectar Playground */;
+			targetProxy = 7766BE8D2C871951003F3F9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7766BE942C871951003F3F9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7766BE952C871951003F3F9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		7766BE972C871951003F3F9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Nectar Playground/Nectar_Playground.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Nectar Playground/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Team-Koala.Nectar-Playground";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7766BE982C871951003F3F9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Nectar Playground/Nectar_Playground.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Nectar Playground/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Team-Koala.Nectar-Playground";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7766BE9A2C871951003F3F9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Team-Koala.Nectar-PlaygroundTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nectar Playground.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Nectar Playground";
+			};
+			name = Debug;
+		};
+		7766BE9B2C871951003F3F9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Team-Koala.Nectar-PlaygroundTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nectar Playground.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Nectar Playground";
+			};
+			name = Release;
+		};
+		7766BE9D2C871951003F3F9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Team-Koala.Nectar-PlaygroundUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Nectar Playground";
+			};
+			name = Debug;
+		};
+		7766BE9E2C871951003F3F9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Team-Koala.Nectar-PlaygroundUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Nectar Playground";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7766BE6C2C87194F003F3F9C /* Build configuration list for PBXProject "Nectar Playground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7766BE942C871951003F3F9C /* Debug */,
+				7766BE952C871951003F3F9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7766BE962C871951003F3F9C /* Build configuration list for PBXNativeTarget "Nectar Playground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7766BE972C871951003F3F9C /* Debug */,
+				7766BE982C871951003F3F9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7766BE992C871951003F3F9C /* Build configuration list for PBXNativeTarget "Nectar PlaygroundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7766BE9A2C871951003F3F9C /* Debug */,
+				7766BE9B2C871951003F3F9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7766BE9C2C871951003F3F9C /* Build configuration list for PBXNativeTarget "Nectar PlaygroundUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7766BE9D2C871951003F3F9C /* Debug */,
+				7766BE9E2C871951003F3F9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7766BE692C87194F003F3F9C /* Project object */;
+}
