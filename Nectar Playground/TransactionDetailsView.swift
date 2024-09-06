@@ -18,10 +18,10 @@ struct TransactionDetailsView: View {
             Text("Description: \(transaction.descriptionText)")
                 .font(.title2)
             
-            Text("Transaction Date: \(transaction.transactionDate)")
+            Text("Transaction Date: \(formattedDate(transaction.transactionDate))")
                 .font(.body)
             
-            Text("Processed Date: \(transaction.processedDate)")
+            Text("Processed Date: \(formattedDate(transaction.processedDate))")
                 .font(.body)
             
             Text("Points: \(transaction.points)")
@@ -36,7 +36,22 @@ struct TransactionDetailsView: View {
             }
         }
     }
+    
+    func formattedDate(_ dateString: String) -> String {
+        let formatter = ISO8601DateFormatter()
+        formatter.timeZone = TimeZone(secondsFromGMT: 0) 
+        if let date = formatter.date(from: dateString) {
+            let displayFormatter = DateFormatter()
+            displayFormatter.dateStyle = .medium
+            displayFormatter.timeStyle = .short
+            displayFormatter.timeZone = TimeZone.current
+            return displayFormatter.string(from: date)
+        }
+        return dateString
+    }
+
 }
+
 struct TransactionDetailsView_Previews: PreviewProvider {
     static var previews: some View {
         TransactionDetailsView(transaction: TransactionItem(
@@ -52,3 +67,4 @@ struct TransactionDetailsView_Previews: PreviewProvider {
         ))
     }
 }
+
