@@ -16,6 +16,7 @@ class TransactionListViewController: UIViewController {
         super.viewDidLoad()
         setupTableView()
         presenter.loadTransactions()
+        tableView.register(TransactionTableViewCell.self, forCellReuseIdentifier: "TransactionCell")
     }
 
     private func setupTableView() {
@@ -42,9 +43,9 @@ extension TransactionListViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionCell", for: indexPath) as! TransactionTableViewCell
         let transaction = presenter.transactions[indexPath.row]
-        cell.textLabel?.text = transaction.descriptionText
+        cell.configure(with: transaction)
         return cell
     }
 }

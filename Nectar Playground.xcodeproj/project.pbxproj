@@ -16,6 +16,7 @@
 		7720ECD32C89F39800320402 /* TransactionModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7720ECD22C89F39800320402 /* TransactionModels.swift */; };
 		7720ECD52C89F49600320402 /* UIKitPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7720ECD42C89F49600320402 /* UIKitPresenter.swift */; };
 		7720ECD72C89FA3700320402 /* UIKitConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7720ECD62C89FA3700320402 /* UIKitConfigurator.swift */; };
+		7720ECD92C8B44A000320402 /* UIKitTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7720ECD82C8B44A000320402 /* UIKitTableCell.swift */; };
 		7766BE752C87194F003F3F9C /* Nectar_PlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7766BE742C87194F003F3F9C /* Nectar_PlaygroundApp.swift */; };
 		7766BE772C87194F003F3F9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7766BE762C87194F003F3F9C /* ContentView.swift */; };
 		7766BE792C871951003F3F9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7766BE782C871951003F3F9C /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 		7720ECD22C89F39800320402 /* TransactionModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModels.swift; sourceTree = "<group>"; };
 		7720ECD42C89F49600320402 /* UIKitPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitPresenter.swift; sourceTree = "<group>"; };
 		7720ECD62C89FA3700320402 /* UIKitConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitConfigurator.swift; sourceTree = "<group>"; };
+		7720ECD82C8B44A000320402 /* UIKitTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTableCell.swift; sourceTree = "<group>"; };
 		7766BE712C87194F003F3F9C /* Nectar Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nectar Playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7766BE742C87194F003F3F9C /* Nectar_PlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nectar_PlaygroundApp.swift; sourceTree = "<group>"; };
 		7766BE762C87194F003F3F9C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				7766BE7B2C871951003F3F9C /* Preview Content */,
 				7720ECC52C8729BD00320402 /* SwiftUIView.swift */,
 				7720ECC72C8729F100320402 /* UIKitViewController.swift */,
+				7720ECD82C8B44A000320402 /* UIKitTableCell.swift */,
 				7720ECD62C89FA3700320402 /* UIKitConfigurator.swift */,
 				7720ECD02C89BD1000320402 /* UIKitInteractor.swift */,
 				7720ECD42C89F49600320402 /* UIKitPresenter.swift */,
@@ -299,6 +302,7 @@
 				7720ECD12C89BD1000320402 /* UIKitInteractor.swift in Sources */,
 				7766BE752C87194F003F3F9C /* Nectar_PlaygroundApp.swift in Sources */,
 				7720ECC62C8729BD00320402 /* SwiftUIView.swift in Sources */,
+				7720ECD92C8B44A000320402 /* UIKitTableCell.swift in Sources */,
 				7720ECCA2C872A1E00320402 /* TransactionDetailsView.swift in Sources */,
 				7720ECD32C89F39800320402 /* TransactionModels.swift in Sources */,
 				7720ECCF2C87541600320402 /* UICustomColors.swift in Sources */,
