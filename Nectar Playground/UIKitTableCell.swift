@@ -7,7 +7,14 @@
 
 import UIKit
 
+protocol TransactionTableViewCellDelegate: AnyObject {
+    func didTapCell(with transaction: TransactionItem)
+}
+
 class TransactionTableViewCell: UITableViewCell {
+    weak var delegate: TransactionTableViewCellDelegate?
+    var transaction: TransactionItem?
+
     let headerLabel = UILabel()
     let descriptionLabel = UILabel()
     let pointsLabel = UILabel()
@@ -17,11 +24,13 @@ class TransactionTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupViews()
+        addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
     }
 
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setupViews()
+        addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
     }
 
     private func setupViews() {
@@ -52,11 +61,18 @@ class TransactionTableViewCell: UITableViewCell {
     }
 
     func configure(with transaction: TransactionItem) {
+        self.transaction = transaction
         headerLabel.text = transaction.headerText
         descriptionLabel.text = transaction.descriptionText
         pointsLabel.text = "Points: \(transaction.points)"
         valueLabel.text = String(format: "Value: £ %.2f", transaction.monetaryValue)
     }
+
+    @objc private func handleTap() {
+        guard let transaction = transaction else { return }
+        delegate?.didTapCell(with: transaction)
+    }
 }
+
 
 

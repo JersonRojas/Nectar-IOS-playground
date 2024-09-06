@@ -4,8 +4,8 @@
 //
 //  Created by Jerson RojasOrtega on 03/09/2024.
 //
-
 import UIKit
+import SwiftUI
 
 class TransactionListViewController: UIViewController {
     var presenter: TransactionListPresenter!
@@ -21,6 +21,7 @@ class TransactionListViewController: UIViewController {
 
     private func setupTableView() {
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         view.addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -46,6 +47,15 @@ extension TransactionListViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionCell", for: indexPath) as! TransactionTableViewCell
         let transaction = presenter.transactions[indexPath.row]
         cell.configure(with: transaction)
+        cell.delegate = self
         return cell
+    }
+}
+
+extension TransactionListViewController: UITableViewDelegate, TransactionTableViewCellDelegate {
+    func didTapCell(with transaction: TransactionItem) {
+        let detailsView = TransactionDetailsView(transaction: transaction)
+        let hostingController = UIHostingController(rootView: detailsView)
+        navigationController?.pushViewController(hostingController, animated: true)
     }
 }
