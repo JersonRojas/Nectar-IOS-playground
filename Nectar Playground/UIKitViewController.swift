@@ -11,12 +11,29 @@ class TransactionListViewController: UIViewController {
     var presenter: TransactionListPresenter!
 
     private let tableView = UITableView()
+    private let titleLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Transactions UI Kit"
+        label.font = UIFont.boldSystemFont(ofSize: 24)
+        label.textAlignment = .center
+        return label
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTitleLabel()
         setupTableView()
         presenter.loadTransactions()
         tableView.register(TransactionTableViewCell.self, forCellReuseIdentifier: "TransactionCell")
+    }
+
+    private func setupTitleLabel() {
+        view.addSubview(titleLabel)
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            titleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
+            titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
     }
 
     private func setupTableView() {
@@ -26,7 +43,7 @@ class TransactionListViewController: UIViewController {
         view.addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: view.topAnchor),
+            tableView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 16),
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor)

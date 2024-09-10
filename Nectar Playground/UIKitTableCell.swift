@@ -44,7 +44,6 @@ class TransactionTableViewCell: UITableViewCell {
 
         let hStack = UIStackView(arrangedSubviews: [pointsLabel, UIView(), valueLabel])
         hStack.axis = .horizontal
-        hStack.spacing = 8
 
         stackView.addArrangedSubview(headerLabel)
         stackView.addArrangedSubview(descriptionLabel)
